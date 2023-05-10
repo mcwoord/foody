@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   scroll-behavior: smooth;
+
 }
 
 *, *:before, *:after {
@@ -19,9 +20,17 @@ ol, ul {
   list-style: none;
 }
 
+a:visited {
+  color:#F2F2F2;
+}
 
+a:focus {
+  color: firebrick;
+}
 
-
+button:visited {
+  background: #060608;
+}
 
 body {
     font-family: 'Roboto';
@@ -29,15 +38,7 @@ body {
     ;
 }
 
-li {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #dddddd;
-    line-height: 50px;
+ul {
+  position: fixed;
 }
-
-
-
 
