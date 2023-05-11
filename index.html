@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,48 +16,49 @@
     <div id="wrapper">
         <!-- Header -->
         <section>
-            <img class="first-logo" src="images/Logo.png" alt="Logo image" srcset="images/Logo@2x.png 2x">
-            <div class="header">
+            <div class="header sticky">
+                <img class="first-logo" src="images/Logo.png" alt="Logo image" srcset="images/Logo@2x.png 2x">
                 <nav>
-                    <ul>
+                    <ul class="nav-bar sticky">
                         <li><a href="#about">About us</a></li>
                         <li><a href="#menu">Menu</a></li>
-                        <li><a href="#place order">Place order</a></li>
-                        <img class="shoping-cart" src="images/shoping_cart.png" srcset="images/shoping_cart@2x.png 2x">
+                        <li><a href="#placeOrder">Place order</a></li>
+                        <li><img class="shoping-cart" src="images/shoping_cart.png" srcset="images/shoping_cart@2x.png 2x"></li>
                     </ul>
                 </nav>
             </div>
         </section>
         <!-- Intro -->
         <section>
-            <div id="intro" class="intro">
-                <h1>Enjoy the taste of<br>Japan at home</h1>                
-                <p>Order exquisite dishes from Japanese cuisine<br>with home delivery from our professional<br>chefs and enjoy the atmosphere of Japan,<br>without leaving your home</p>
-                <button><a href="#place order">ADD TO ORDER</a></button>
-                <button><a href="#menu">MENU</a></button>
-            </div>
-            <div>
-                <img class="bowl-image" src="images/Bowl.png" alt="Bowl" srcset="images/Bowl@2x.png 2x">
+            <div class="container">
+                <div id="intro">
+                    <h1>Enjoy the taste of<br>Japan at home</h1>                
+                    <p>Order exquisite dishes from Japanese cuisine<br>with home delivery from our professional<br>chefs and enjoy the atmosphere of Japan,<br>without leaving your home</p>
+                    <a href="#placeOrder"><button>ADD TO ORDER</button></a>
+                    <a href="#menu"><button>MENU</button></a>
+                </div>
+                <div>
+                    <img class="bowl-image" src="images/Bowl.png" alt="Bowl" srcset="images/Bowl@2x.png 2x">
+                </div>
             </div>
         </section>
         <!-- About -->
         <section id="about">
-            <div>
-                <img src="images/sushi.png" alt="Sushi" srcset="images/sushi@2x.png 2x">
-                
-                <div>
+            <div class="about-container">
+                <img src="images/sushi.png" alt="Sushi" srcset="images/sushi@2x.png 2x" class="aboutImage">
+                <div class="about-infos">
                     <h1>The art of Japanese cuisine:<br>Choose the best!</h1> 
-                    <div>
+                    <div class="about-info">
                         <img src="images/H_KIMONO.png" alt="Kimono" srcset="images/H_KIMONO@2x.png 2x">                   
                         <h3>Authenticity</h3>
                         <p>Our restaurant adheres to the traditions of Japanese<br>cuisine, using only the finest ingredients and<br>cooking techniques</p>
                     </div>
-                    <div>
+                    <div class="about-info">
                         <img src="images/F_SUSHI.png" alt="Kimono" srcset="images/F_SUSHI@2x.png 2x">                   
                         <h3>Diversity</h3>
                         <p>We offer a wide selection of dishes, including<br>classic sushi and sashimi, as well as unique<br>culinary creations from our chefs</p>
                     </div>
-                    <div>
+                    <div class="about-info">
                         <img src="images/H_SHIRO-ATO.png" alt="Kimono" srcset="images/H_SHIRO-ATO@2x.png 2x">                   
                         <h3>Cozy atmosphere</h3>
                         <p>Enjoy the cozy and relaxing atmosphere<br>of our restaurant, where you can spend<br>time with friends and family, savoring<br>the flavors of Japan</p>
@@ -97,34 +97,31 @@
                     <p>The soup is made with dashi and<br>miso paste, and also contains slices of fresh fish,<br>seafood, shiitake mushrooms, and green onions</p>
                     <button>ADD TO ORDER</button>
                 </div>
-                <p>View full menu</p>
             </div>
+            <p style="text-align: center; padding-top: 4rem;">View full menu</p>
         </section>
         <!-- Place order -->
-        <section id="place oreder">
-            <div>
+        <section id="placeOrder">
+            <div class="container">
                 <div>
-                    <h1>We will bring your order<br>within 30 minutes</h1>
-                    <p>Fill in your contact details and<br>we will start preparing your order</p>
+                    <h1 style="padding-bottom: 2rem;">We will bring your order<br>within 30 minutes</h1>
+                    <p style="padding-bottom: 2rem; font-size: 1.2rem;">Fill in your contact details and<br>we will start preparing your order</p>
                     <div class="order form">
                         <input type="email">
                         <input type="tel">
                         <input type="text">
-                        <p>ORDER NOW</p>
+                        <p class="text-center" style="padding: 2rem;">ORDER NOW</p>
                     </div>
-                    
-
                 </div>
-                <img src="images/sushiset.png" srcset="images/sushiset@2x.png 2x">
+                <img src="images/sushiset.png" srcset="images/sushiset@2x.png 2x" class="placeOrderImage">
             </div>
         </section>
         
-        <div>
+        <div class="container">
             <img src="images/Logo.png" srcset="images/Logo@2x.png 2x">
-            <p>All rights reserved</p>
+            <p style="margin-left: 1rem;">All rights reserved</p>
         </div>
 
     </div>
-    
 </body>
 </html>

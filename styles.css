@@ -35,10 +35,163 @@ button:visited {
 body {
     font-family: 'Roboto';
     background-color: #060608;
-    ;
 }
 
-ul {
+.wrapper {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0 2rem ;
+}
+
+/* Header Navbar */
+
+.header {
+  background-color: #060608;
+}
+
+.first-logo{
+  float:left;
+  margin:0;
+  padding: 2rem;
+}
+
+.sticky {
   position: fixed;
+  top: 0;
+  width: 100%;
 }
 
+.nav-bar {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 4rem 0 0;
+}
+
+.nav-bar li {
+  padding: 1rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  color: #555;
+}
+
+/* Intro */
+
+#intro h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  margin-top: -10rem;
+}
+
+#intro p {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6rem;
+}
+
+#intro button {
+  width: 8rem;
+  height: 3rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 2px;
+}
+
+#intro a {
+  color: #060608;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#intro button:hover {
+  background-color: firebrick;
+  font-weight: bold;
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+/* About */
+
+.about-container {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 50% 50%;
+  padding: 5rem 0 2rem ;
+}
+
+.aboutImage {
+  margin-top: -20rem;
+}
+
+.about-infos {
+  margin-top: -4rem;
+}
+
+.about-info {
+  margin-top: 1rem;
+}
+
+.about-info h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Place order */
+
+.cards {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-gap: 10px;
+  justify-content: center;
+  padding-top: 8rem;
+}
+
+.card1 {
+  padding: 20px;
+  margin: 10px;
+}
+
+.card1 img {
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card1 h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.card1 h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card1 p {
+  font-size: 14px;
+}
+
+.card1 button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+
+
+/* A media query for a large screen */
+@media (min-width: 1170px) {
+  .wrapper {
+    max-width: 1170px;
+  }
+}
