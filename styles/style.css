@@ -25,6 +25,20 @@ h1 {
   line-height: 47px;
 }
 
+h2 {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+p {
+  font-family: 'Roboto-Light';
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+}
+
 body {
   background-color: #060608;
   color: #F2F2F2;
@@ -91,6 +105,10 @@ body {
   margin-bottom: 70px;  
 }
 
+.main-section {
+  padding-bottom: 430px;
+}
+
 .button01 {
   height: 61px;
   width: 200px;
@@ -110,7 +128,7 @@ body {
   border: 1px solid #FE312E;
   color: #F2F2F2;
   font-size: 18px;
-  font-family: Roboto;  
+  font-family: Roboto; 
 }
 
 .button01:hover {
@@ -128,3 +146,42 @@ body {
   top: +150px;
   left: calc(100% - 1100px);
 }
+
+.about-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-image {
+  float: left;
+  margin-top: -200px;
+}
+
+.about-title {
+  margin-bottom: 60px;
+}
+
+.about-description {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.about-unit {
+  display: grid;
+  grid-template-columns: 55px 1040px;
+  gap: 26px;  
+  margin-bottom: 63px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
